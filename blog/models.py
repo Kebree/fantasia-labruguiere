@@ -11,4 +11,4 @@ class Article(models.Model):
     models.DateTimeField(auto_now_add=True, auto_now=False, verbose_name="Date de parution")
 
     def __unicode__(self):
-        return u"%s" % self.titre
+        return u"%s" % self.title
