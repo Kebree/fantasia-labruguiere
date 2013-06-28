@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %} 
+        <div class="article">
+            <h2> {{ article.title }} </h2>
+            <p class="infosArticle"> Publié le {{ article.date }} par {{ article.autor }}
+            {% if article.preContent %} <p><span class="preContent"> {{ article.preContent }} </span></p> {% endif %}
+            <p>
+                {{ article.content }}
+            </p>
+        </div>
+{% endblock %}
