@@ -2,13 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>Fantasia Labruguière</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
     </head>
     <body>
-        <div id="menuBar">
-            {% block menu %}{% endblock %}
-        </div>
-        <div id="content">
-            {% block content %}{% endblock %}
+        <div id="center">
+            <div id="menuBar">
+                {% block menu %}
+                <div>
+                    <p id="mainTitle">Harmonie Fantasia</p>
+                </div>
+                {% endblock %}
+            </div>
+            <div id="content">
+                {% block content %}{% endblock %}
+            </div>
         </div>
     </body>
 </html>
