@@ -6,15 +6,26 @@
     </head>
     <body>
         <div id="center">
-            <div id="menuBar">
+            <div id="titlebar">
                 {% block menu %}
                 <div>
                     <p id="mainTitle">Harmonie Fantasia</p>
                 </div>
                 {% endblock %}
             </div>
+            <div id="sections">
+                <div><a href="/blog/">Articles</a></div><div><a href="/gallery/">Galerie</a></div>
+            </div>
+            <div id="navigation">
+                {% block navigation %}
+                <p><a href="/">Accueil</a></p>
+                {% endblock %}
+            </div>
             <div id="content">
                 {% block content %}{% endblock %}
+            </div>
+            <div id="footer">
+                <p>Developped by Jean-Baptiste Gintrand - <a href="http://kebree.fr" target="_blank">kebree.fr</a></p>
             </div>
         </div>
     </body>

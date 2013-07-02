@@ -2,14 +2,23 @@ html {
     padding: 0;
     margin: 0;
     background-color: #2B0303;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
     background-color: #960904;
-    background : url(/static/img/noise_bg.png)
+    background : url(/static/img/noise_bg.png);
     padding: 0;
-    margin : 20px;
+    margin : 10px;
     min-height: 1000px;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+    color: black;
+    text-decoration: underline;
 }
 
 #center {
@@ -17,21 +26,74 @@ body {
     min-height: 1000px;
     margin-left: auto;
     margin-right: auto;
-    background : url(/static/img/bg_test.png)
+    background : url(/static/img/bg_test.png);
 }
 
 #content {
     margin: 20px;
+    min-height: 805px;
 }
 
-#menuBar {
+#titlebar {
     color: white;
-    height : 150px;
-    background : url(/static/img/head_bg.png)
+    height : 100px;
+    background : url(/static/img/head_bg.png);
 }
 
 #mainTitle {
     margin-left: 30px;
     padding-top: 30px;
-    font-size: 16pt;
+    font-size: 20pt;
 }
+
+#sections {
+    margin-top: 2px;
+    width: 1000px;
+    background-color: #404040;
+    height : 45px;
+    color: white;
+}
+
+#sections div {
+    display: inline;
+    margin: 0px 0px 0px 20px;
+    padding: 12px 0px 0px 0px;
+    height: 30px;
+    width: 150px;
+    float: left;
+}
+
+#sections a,
+#sections a:active,
+#sections a:hover,
+#sections a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#navigation {
+    margin: 10px;
+}
+
+#navigation p {
+    margin: 0;
+}
+
+#footer {
+    width: 1000px;
+    background-color: #404040;
+    height : 20px;
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+}
+
+#footer a,
+#footer a:active,
+#footer a:hover,
+#footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
