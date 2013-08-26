@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %} 
+    <h2>Derniers articles parus :</h2>
+    
     {% for article in art_list %}
         <div class="articleResume">
             <h2> {{ article.title }} </h2>
@@ -11,4 +13,18 @@
             </p>
         </div>
     {% endfor %}
+    
+    <div class="pagination">
+        <span class="step-links">
+            {% if art_list.has_previous %}
+                <a href="?page={{ art_list.previous_page_number }}">previous</a>
+            {% endif %}
+            <span class="current">
+                Page {{art_list.number}} of {{art_list.paginator.num_pages}}
+            </span>
+            {% if art_list.has_next%}
+                <a href="?page={{ art_list.next_page_number }}">next</a>
+            {% endif %}
+        </span>
+    </div>
 {% endblock %}

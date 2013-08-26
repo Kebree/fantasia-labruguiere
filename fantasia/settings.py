@@ -52,7 +52,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = '/home/gintrajb/Workspace/django/fantasia/media'
+MEDIA_ROOT = '/home/gintrajb/workspace/django/fantasia-labruguiere/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -69,7 +69,7 @@ STATIC_ROOT = ''
 # Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/'
 
-BASE_DIR = '/home/gintrajb/Workspace/django/fantasia'
+BASE_DIR = '/home/gintrajb/workspace/django/fantasia-labruguiere'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -113,7 +113,7 @@ ROOT_URLCONF = 'fantasia.urls'
 WSGI_APPLICATION = 'fantasia.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/home/gintrajb/Workspace/django/fantasia/templates'
+    '/home/gintrajb/workspace/django/fantasia-labruguiere/templates'
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -126,10 +126,12 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
+    'photologue',
 )
 
 # A sample logging configuration. The only tangible logging

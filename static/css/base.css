@@ -2,23 +2,59 @@ html {
     padding: 0;
     margin: 0;
     background-color: #2B0303;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    font-size : 13pt;
 }
 
 body {
     background-color: #960904;
     background : url(/static/img/noise_bg.png);
+    margin : 0px;
     padding: 0;
-    margin : 10px;
     min-height: 1000px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color : #252525;
+    margin : 19px 0px 5px 0px;
 }
 
 a,
 a:active,
 a:hover,
 a:visited {
-    color: black;
+    color : #252525;
     text-decoration: underline;
+}
+
+.articleResume {
+    /*border-style : solid;
+    border-width : 1px;*/
+    padding : 10px;
+    margin : 0px 0px 10px 0px;
+    border-radius : 5px;
+    background-color : white;
+    width : 500px;
+}
+
+.infosArticle {
+    font-style: italic;
+    font-size : 11pt;
+    margin-top : 0px;
+}
+
+.galleryPhotoDetail {
+    margin: 0px 30px 25px 30px;
+}
+
+.gallery-photo {
+    float : left;
+    margin : 10px 20px 0px 0px; 
+}
+
+.photo-gallery {
+    width : 950px;
+    height : 150px;
 }
 
 #center {
@@ -41,7 +77,7 @@ a:visited {
 }
 
 #mainTitle {
-    margin-left: 30px;
+    margin: 0px 0px 0px 30px;
     padding-top: 30px;
     font-size: 20pt;
 }
@@ -79,6 +115,11 @@ a:visited {
     margin: 0;
 }
 
+#allGalLink {
+    float : left;
+    width : 950px;
+}
+
 #footer {
     width: 1000px;
     background-color: #404040;
@@ -86,6 +127,10 @@ a:visited {
     color: white;
     text-align: center;
     font-size: 10pt;
+}
+
+#footer p {
+    margin : 0px;
 }
 
 #footer a,

@@ -7,8 +7,8 @@
 <value>manage.py</value>
 </pydev_variables_property>
 <pydev_pathproperty name="org.python.pydev.PROJECT_SOURCE_PATH">
-<path>/fantasia/blog</path>
-<path>/fantasia/fantasia</path>
-<path>/fantasia/templates</path>
+<path>/fantasia-labruguiere/blog</path>
+<path>/fantasia-labruguiere/fantasia</path>
+<path>/fantasia-labruguiere/templates</path>
 </pydev_pathproperty>
 </pydev_project>
