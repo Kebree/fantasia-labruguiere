@@ -48,9 +48,13 @@ a:visited {
 }
 
 .gallery-photo {
-    width : 950px;
     float : left;
     margin : 10px 20px 0px 0px; 
+}
+
+.photo_large {
+    width : 950px;
+    margin-bottom : 40px;
 }
 
 .photo-gallery {
