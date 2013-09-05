@@ -1,0 +1,125 @@
+html {
+    padding: 0;
+    margin: 0;
+    background-color: #2B0303;
+    font-family: Arial, sans-serif;
+    font-size : 13pt;
+}
+
+body {
+    background-color: #960904;
+    background : url(/static/img/noise_bg.png);
+    margin : 0px;
+    padding: 0;
+    min-height: 1000px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color : #252525;
+    margin : 19px 0px 5px 0px;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+    color : #252525;
+    text-decoration: underline;
+}
+
+.articleResume {
+    /*border-style : solid;
+    border-width : 1px;*/
+    padding : 10px;
+    margin : 0px 0px 10px 0px;
+    border-radius : 5px;
+    background-color : white;
+    width : 500px;
+}
+
+.infosArticle {
+    font-style: italic;
+    font-size : 11pt;
+    margin-top : 0px;
+}
+
+#center {
+    width: 1000px;
+    min-height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background : url(/static/img/bg_test.png);
+}
+
+#content {
+    margin: 20px;
+    min-height: 805px;
+}
+
+#titlebar {
+    color: white;
+    height : 100px;
+    background : url(/static/img/head_bg.png);
+}
+
+#mainTitle {
+    margin: 0px 0px 0px 30px;
+    padding-top: 30px;
+    font-size: 20pt;
+}
+
+#sections {
+    margin-top: 2px;
+    width: 1000px;
+    background-color: #404040;
+    height : 45px;
+    color: white;
+}
+
+#sections div {
+    display: inline;
+    margin: 0px 0px 0px 20px;
+    padding: 12px 0px 0px 0px;
+    height: 30px;
+    width: 150px;
+    float: left;
+}
+
+#sections a,
+#sections a:active,
+#sections a:hover,
+#sections a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#navigation {
+    margin: 10px;
+}
+
+#navigation p {
+    margin: 0;
+}
+
+#footer {
+    width: 1000px;
+    background-color: #404040;
+    height : 20px;
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+}
+
+#footer p {
+    margin : 0px;
+}
+
+#footer a,
+#footer a:active,
+#footer a:hover,
+#footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
