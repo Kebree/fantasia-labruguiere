@@ -43,6 +43,28 @@ a:visited {
     margin-top : 0px;
 }
 
+<<<<<<< local
+=======
+.galleryPhotoDetail {
+    margin: 0px 30px 25px 30px;
+}
+
+.gallery-photo {
+    float : left;
+    margin : 10px 20px 0px 0px; 
+}
+
+.photo_large {
+    width : 950px;
+    margin-bottom : 40px;
+}
+
+.photo-gallery {
+    width : 950px;
+    height : 150px;
+}
+
+>>>>>>> other
 #center {
     width: 1000px;
     min-height: 1000px;
