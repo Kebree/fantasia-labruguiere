@@ -1,34 +1,107 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+    
     <head>
-        <title>Fantasia Labruguière</title>
-        <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
-        <script type="text/javascript" src="/static/js/jquery.js"></script>
-        <script type="text/javascript" src="/static/js/jquery-ui/jquery-1.9.1.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+            Fixed sidebar
+        </title>
+        <meta name="description" content="">
+        <meta name="author" content="ink, cookbook, recipes">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="shortcut icon" href="/static/img/ink-favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/static/img/touch-icon.57.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/img/touch-icon.72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/img/touch-icon.114.png">
+        <link rel="apple-touch-startup-image" href="/static/img/splash.320x460.png"
+        media="screen and (min-device-width: 200px) and (max-device-width: 320px) and (orientation:portrait)">
+        <link rel="apple-touch-startup-image" href="/static/img/splash.768x1004.png"
+        media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+        <link rel="apple-touch-startup-image" href="/static/img/splash.1024x748.png"
+        media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+        <link rel="stylesheet" type="text/css" href="/static/css/ink.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/gallery.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/newbase.css">
+        
+        <!--[if IE 7 ]>
+            <link rel="stylesheet" href="../css/ink-ie7.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <![endif]-->
+        
+        <script type="text/javascript" src="/static/js/holder.js"></script>
+        <script type="text/javascript" src="/static/js/ink.min.js"></script>
+        <script type="text/javascript" src="/static/js/ink-ui.min.js"></script>
+        <script type="text/javascript" src="/static/js/autoload.js"></script>
+        <script type="text/javascript" src="/static/js/html5shiv.js"></script>
+        
+        
+        <style type="text/css">
+            body {
+                background: #ededed;
+            }
+            header {
+                padding: 2em 0;
+                margin-bottom: 2em;
+                text-align: left;
+                position: fixed;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            header h1 small:before  {
+                content: "|";
+                margin: 0 0.5em;
+                font-size: 1.6em;
+            }
+
+            header .ink-navigation {
+                margin-top: 2em;
+            }
+            footer {
+                background: #ccc;
+                color: #0003;
+            }
+            footer p {
+                padding: 0.5em 1em 0.5em 0;
+                margin: 0;        
+            }
+
+            .unstyled li { 
+                padding: 0.4em 0; 
+                text-align: right; 
+            }
+            .content {
+                padding-top: 2em;
+            }
+
+        </style>
     </head>
+    
     <body>
-        <div id="center">
-            <div id="titlebar">
-                {% block menu %}
-                <div>
-                    <p id="mainTitle">Harmonie Fantasia</p>
+        <div class="ink-grid">            
+            <div class="column-group gutters">
+                <div class="large-33 medium-33 small-100">
+
+                <header>
+                    <h1>
+                        Fantasia<small>harmonie</small>
+                    </h1>
+                    <nav class="ink-navigation">
+                        <ul class="menu vertical black">
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/gallery">Gallerie</a></li>
+                        </ul>
+                    </nav>             
+                </header>
                 </div>
-                {% endblock %}
+                <div class="large-66 medium-66 small-100 content">
+                    {% block content %}{% endblock %}
+                </div>
             </div>
-            <div id="sections">
-                <div><a href="/blog/">Articles</a></div><div><a href="/gallery/">Galerie</a></div>
-            </div>
-            <div id="navigation">
-                {% block navigation %}
-                <p><a href="/">Accueil</a></p>
-                {% endblock %}
-            </div>
-            <div id="content">
-                {% block content %}{% endblock %}
-            </div>
-            <div id="footer">
-                <p>Developped by Jean-Baptiste Gintrand - <a href="http://kebree.fr" target="_blank">kebree.fr</a></p>
-            </div>
+            
         </div>
     </body>
+
 </html>

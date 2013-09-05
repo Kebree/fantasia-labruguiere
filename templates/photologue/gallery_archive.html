@@ -5,12 +5,12 @@
 
 {% block content %}
 
-<h1>Latest Photo Galleries</h1>
+<h3>Latest Photo Galleries</h3>
 
 {% if latest %}
     {% for gallery in latest %}
     <div class="photo-gallery">
-        <h2><a href="{{ gallery.get_absolute_url }}">{{ gallery.title }}</a></h2>
+        <h4><a href="{{ gallery.get_absolute_url }}">{{ gallery.title }}</a></h4>
         {% for photo in gallery.sample %}
         <div class="gallery-photo">
             <a href="{{ photo.get_absolute_url }}"><img src="{{ photo.get_thumbnail_url }}" class="{% block gallery-photo-class %}{% endblock %}" alt="{{ photo.title }}"/></a>

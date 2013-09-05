@@ -50,9 +50,11 @@ USE_L10N = True
 # If you set this to False, Django will not use timezone-aware datetimes.
 USE_TZ = True
 
+BASE_DIR = '/home/gintrajb/workspace/django/fantasia-labruguiere'
+
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = '/var/www/fantasia/media'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -63,13 +65,12 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = '/var/www/fantasia/static'
+STATIC_ROOT = ''
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/'
 
-BASE_DIR = '/var/www/fantasia'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -113,7 +114,7 @@ ROOT_URLCONF = 'fantasia.urls'
 WSGI_APPLICATION = 'fantasia.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/var/www/fantasia/templates'
+    os.path.join(BASE_DIR, "templates"),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

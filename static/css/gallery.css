@@ -1,0 +1,16 @@
+.galleryPhotoDetail {
+    margin: 0px 30px 25px 30px;
+}
+
+.gallery-photo {
+    float : left;
+    margin : 10px 20px 0px 0px; 
+}
+
+.photo-gallery {
+    height : 150px;
+}
+
+#allGalLink {
+    float : left;
+}

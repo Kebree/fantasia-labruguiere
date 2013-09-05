@@ -43,21 +43,6 @@ a:visited {
     margin-top : 0px;
 }
 
-.galleryPhotoDetail {
-    margin: 0px 30px 25px 30px;
-}
-
-.gallery-photo {
-    width : 950px;
-    float : left;
-    margin : 10px 20px 0px 0px; 
-}
-
-.photo-gallery {
-    width : 950px;
-    height : 150px;
-}
-
 #center {
     width: 1000px;
     min-height: 1000px;
@@ -114,11 +99,6 @@ a:visited {
 
 #navigation p {
     margin: 0;
-}
-
-#allGalLink {
-    float : left;
-    width : 950px;
 }
 
 #footer {

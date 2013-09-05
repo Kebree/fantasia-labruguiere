@@ -7,7 +7,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def home(request):
     arts = Article.objects.order_by('-date')
-    paginator = Paginator(arts, 3)
+    paginator = Paginator(arts, 5)
     page = request.GET.get('page')
     try:
         articles = paginator.page(page)
