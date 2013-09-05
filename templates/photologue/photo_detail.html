@@ -7,7 +7,7 @@
 {% block content %}
 
 <h1>{{ object.title }}</h1>
-<div class="gallery-photo">
+<div class="gallery-photo photo_large">
     <a href="{{ object.image.url }}"><img src="{{ object.get_display_url }}" class="{% block gallery-photo-class %}{% endblock %}" alt="{{ object.title }}"/></a>
     {% if object.caption %}<p>{{ object.caption }}</p>{% endif %}
 </div>
