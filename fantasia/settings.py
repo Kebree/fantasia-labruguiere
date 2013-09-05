@@ -1,7 +1,7 @@
 # Django settings for fantasia project.
 import os.path
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -50,7 +50,7 @@ USE_L10N = True
 # If you set this to False, Django will not use timezone-aware datetimes.
 USE_TZ = True
 
-BASE_DIR = '/home/gintrajb/workspace/django/fantasia-labruguiere'
+BASE_DIR = '/var/www/fantasia'
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"

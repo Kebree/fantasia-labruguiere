@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 
-{% block navigation %}
-    <p><a href="/">Accueil</a> > {{ article.title }}</p> 
+{% block navigation %} 
+<nav class="ink-navigation">
+	<ul class="breadcrumbs">
+		<li> <a href="/blog">Articles</a></li>
+		<li class="active">{{ article.title }}</li>
+	</ul>
+</nav>
 {% endblock %}
 
 {% block content %} 

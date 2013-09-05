@@ -1,6 +1,14 @@
 {% extends "photologue/root.html" %}
 {% load url from future %}
 
+{% block navigation %} 
+<nav class="ink-navigation">
+	<ul class="breadcrumbs">
+		<li class="active"> <a href="/gallery/gallery">Galleries</a></li>
+	</ul>
+</nav>
+{% endblock %}
+
 {% block title %}Latest Photo Galleries{% endblock %}
 
 {% block content %}

@@ -2,17 +2,26 @@
 
 {% load photologue_tags %}
 
+{% block navigation %} 
+<nav class="ink-navigation">
+	<ul class="breadcrumbs">
+		<li> <a href="/gallery/photo">Photos</a></li>
+		<li class="active">{{ object.title }}</li>
+	</ul>
+</nav>
+{% endblock %}
+
 {% block title %}{{ object.title }}{% endblock %}
 
 {% block content %}
 
-<h1>{{ object.title }}</h1>
-<div class="gallery-photo photo_large">
+<h2>{{ object.title }}</h2>
+<div class="gallery-photo photo_large large-100">
     <a href="{{ object.image.url }}"><img src="{{ object.get_display_url }}" class="{% block gallery-photo-class %}{% endblock %}" alt="{{ object.title }}"/></a>
-    {% if object.caption %}<p>{{ object.caption }}</p>{% endif %}
+    {% if object.caption %}<p class="caption">{{ object.caption }}</p>{% endif %}
 </div>
 {% if object.public_galleries %}
-<h2>This photo is found in the following galleries:</h2>
+<h5>This photo is found in the following galleries:</h5>
 <ol>
 {% for gallery in object.public_galleries %}
     <li>{%previous_in_gallery object gallery%} <a href="{{ gallery.get_absolute_url }}" class="galleryPhotoDetail">{{ gallery.title }}</a> {%next_in_gallery object gallery%}</li>
